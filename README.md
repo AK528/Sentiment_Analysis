@@ -3,9 +3,7 @@
 
 The project has the following structure:
 
-Sentiment_Classifier
-            ---
-                        
+    Sentiment_Classifier                              
                         |
                         |         
                         |---
