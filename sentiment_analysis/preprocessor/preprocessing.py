@@ -13,6 +13,7 @@ from sentiment_analysis.config import feature_col, target
 class PreProcessor:
 
     def __init__(self, data=None):
+
         self.data = data
         self.lemmatizer = WordNetLemmatizer()
 
@@ -85,7 +86,6 @@ class PreProcessor:
 
 
 if __name__ == "__main__":
-
     dataset = dataloader.DataLoader().load()
     for i, df in enumerate(dataset):
         print(df.columns)

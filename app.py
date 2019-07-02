@@ -3,9 +3,10 @@ from sentiment_analysis import utility
 from sentiment_analysis.preprocessor import preprocessing
 from sentiment_analysis.feature_extraction import feature_extraction
 from sentiment_analysis.config import sentiment_class
-
+import nltk
 
 app = Flask(__name__)
+nltk.download('wordnet')
 model = utility.load_instance('./sentiment_analysis/saved_instance/model')
 vectorizer = utility.load_instance('./sentiment_analysis/saved_instance/vectorizer')
 preprocess = preprocessing.PreProcessor()

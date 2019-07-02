@@ -1,5 +1,5 @@
 VECTORIZER = None
-DATAFILE = "../data/datafile/"
+DATAFILE = "sentiment_analysis/data/datafile/"
 
 
 dataset = ['train.csv', 'test.csv']
