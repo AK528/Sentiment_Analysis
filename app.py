@@ -13,12 +13,12 @@ feature = feature_extraction.FeatureExtraction()
 class_dict = preprocess.sentiment_label(sentiment_class)
 
 
-@app.route('/', methods=['GET','POST'])
-def sentiment():
+@app.route('/', methods=['GET', 'POST'])
+def sentiments():
 
     if request.method == 'POST':
         phrase = request.form['phrase']
-        processed= preprocess.lemmatize(phrase)
+        processed = preprocess.lemmatize(phrase)
         data = feature.make_prediction(vectorizer, [processed])
         prediction = model.predict(data)
         sentiment = prediction.tolist()
@@ -38,5 +38,5 @@ def sentiment():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run( host='0.0.0.0', port=5000)
 

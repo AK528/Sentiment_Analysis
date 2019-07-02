@@ -5,7 +5,7 @@ class DataLoader:
     def __init__(self):
         self.data = [
             pd.read_csv(
-                 DATAFILE + "/{}".format(f) )
+                 DATAFILE + "{}".format(f))
             for f in dataset
 
         ]

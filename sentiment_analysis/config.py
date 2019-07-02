@@ -1,9 +1,8 @@
 VECTORIZER = None
-DATAFILE = "/home/abhaik/PycharmProjects/Sentiment_Analysis/data/datafile"
+DATAFILE = "../data/datafile/"
 
 
 dataset = ['train.csv', 'test.csv']
-
 """
 sentiment_class : It take classes as multi_class or binary_class depending on data.
 """
